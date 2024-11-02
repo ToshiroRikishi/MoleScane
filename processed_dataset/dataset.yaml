@@ -1,0 +1,13 @@
+names:
+- MEL
+- NV
+- BCC
+- AKIEC
+- BKL
+- DF
+- VASC
+nc: 7
+path: /home/user/MoleScane/processed_dataset
+test: test/images
+train: train/images
+val: val/images

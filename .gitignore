@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+scane_env/
+
+# Node.js
+frontend/node_modules/
+frontend/build/
+
+# Checkpoints and model weights
+checkpoints/
+*.zip
+
+# Dataset and processed data
+dataset/
+processed_dataset/*.cache
+processed_dataset/train
+processed_dataset/val
+processed_dataset/test
+
+# Logs and temporary files
+*.log
+results/
+images_show/
+pred_images/
+videos_show/
+
+# IDE-specific files
+.vscode/
+.idea/

@@ -1,0 +1,57 @@
+<!-- frontend/public/video_detection.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Detection</title>
+</head>
+<body>
+    <h1>Загрузите видео для детекции</h1>
+    <input type="file" id="videoInput" accept="video/*">
+
+    <h2>Детектированное видео</h2>
+    <video id="outputVideo" controls width="640" height="360"></video>
+
+    <script>
+      async function handleVideoUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        // Создаем FormData для отправки видеофайла
+        const formData = new FormData();
+        formData.append("file", file);
+
+        try {
+          // Отправляем запрос на сервер
+          const response = await fetch("http://127.0.0.1:8000/api/video/detect_video", {
+            method: "POST",
+            body: formData,
+          });
+
+          if (response.ok) {
+            const videoBlob = await response.blob();
+            const videoUrl = URL.createObjectURL(videoBlob);
+
+            // Устанавливаем URL обработанного видео для отображения
+            const videoElement = document.getElementById("outputVideo");
+            videoElement.src = videoUrl;
+            videoElement.load();
+            videoElement.play();
+          } else {
+            console.error("Ошибка при обработке видео");
+          }
+        } catch (error) {
+          console.error("Ошибка:", error);
+        }
+      }
+
+      // Добавляем обработчик события для загрузки видео
+      document.addEventListener("DOMContentLoaded", () => {
+        const videoInput = document.getElementById("videoInput");
+        videoInput.addEventListener("change", handleVideoUpload);
+      });
+    </script>
+</body>
+</html>
+

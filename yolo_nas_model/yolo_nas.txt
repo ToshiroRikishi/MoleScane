@@ -1,0 +1,11 @@
+Found existing installation: numpy 1.23.0
+Uninstalling numpy-1.23.0:
+  Would remove:
+    /home/user/MoleScane/scane_env/bin/f2py
+    /home/user/MoleScane/scane_env/bin/f2py3
+    /home/user/MoleScane/scane_env/bin/f2py3.10
+    /home/user/MoleScane/scane_env/lib/python3.10/site-packages/numpy-1.23.0.dist-info/*
+    /home/user/MoleScane/scane_env/lib/python3.10/site-packages/numpy.libs/libgfortran-040039e1.so.5.0.0
+    /home/user/MoleScane/scane_env/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-742d56dc.3.20.so
+    /home/user/MoleScane/scane_env/lib/python3.10/site-packages/numpy.libs/libquadmath-96973f99.so.0.0.0
+    /home/user/MoleScane/scane_env/lib/python3.10/site-packages/numpy/*
