@@ -14,18 +14,18 @@ v20.18.0
 
 import subprocess
 
-# Откройте файл с зависимостями
+
 with open("requirements.txt") as f:
     packages = f.readlines()
 
-# Удалите символы новой строки и лишние пробелы
+
 packages = [pkg.strip() for pkg in packages if pkg.strip()]
 
-# Создайте или очистите файл для ошибок
+
 with open("errors_requirements.txt", "w") as error_file:
     error_file.write("")
 
-# Устанавливайте каждый пакет поочерёдно
+
 for package in packages:
     try:
         print(f"Installing {package}...")
