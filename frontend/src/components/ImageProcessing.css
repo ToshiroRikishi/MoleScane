@@ -1,0 +1,40 @@
+/* frontend/src/components/ImageProcessing.css */
+
+.processing-container {
+    text-align: center;
+    padding: 20px;
+    color: #FBE4D8;
+  }
+  
+  input[type="file"] {
+    color: #FBE4D8;
+    background-color: #2B124C;
+    border: 1px solid #522B5B;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #522B5B;
+    border-radius: 10px;
+  }
+  
+  .upload-section {
+    display: flex;
+    gap: 10px; /* Добавляет расстояние между кнопками */
+    align-items: center;
+  }
+  
+  button,
+  input[type="file"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }

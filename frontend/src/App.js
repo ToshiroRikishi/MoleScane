@@ -32,6 +32,7 @@ import ImageProcessing from "./components/ImageProcessing";
 import VideoProcessing from "./components/VideoProcessing";
 import SkinPassport from "./components/SkinPassport";
 import VideoRealTime from "./components/VideoRealTime";
+import HomePage from "./components/HomePage";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Sidebar />
         <div style={{ marginLeft: "200px", padding: "20px", flex: 1 }}>
           <Routes>
+            <Route path="/" element={<HomePage />} /> {/* Главная страница */}
             <Route path="/image-processing" element={<ImageProcessing />} />
             <Route path="/video-processing" element={<VideoProcessing />} />
             <Route path="/skin-passport" element={<SkinPassport />} />

@@ -1,0 +1,46 @@
+/* frontend/src/styles/HomePage.css */
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #f5e7e2; /* светло-розовый фон */
+    min-height: 100vh;
+    padding-top: 20px;
+}
+  
+.image-container {
+    width: 100%;
+    max-width: 1200px; /* Задайте максимальную ширину изображения */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+  
+.content-container {
+    margin-top: 20px;
+    background-color: #d6aba3; /* цвет фона блока с текстом */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer; /* курсор указателя */
+    max-width: 600px;
+}
+
+    
+.faces-image {
+    width: 100%;
+    height: auto;
+}
+  
+.content-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.content-container p {
+    font-size: 18px;
+    color: #333;
+}
+  
