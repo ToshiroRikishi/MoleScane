@@ -2,9 +2,10 @@
 после скачивания репозитория
 1) для начала лучше установить именно эти версии npm и node
 
-user@rentserver:~/MoleScane/frontend$ npm -v
+npm -v
 10.8.2
-user@rentserver:~/MoleScane/frontend$ node -v
+
+node -v
 v20.18.0
 
 2) зайдите в виртуалку и далее создайте файл
